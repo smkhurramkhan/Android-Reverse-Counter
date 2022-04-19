@@ -135,22 +135,6 @@ class MainActivity : Activity() {
                     btnStart.isEnabled = true
                 }
             }.start()
-
-            //Set a Click Listener for cancel/stop button
-            btnCancel.setOnClickListener {
-                //When user request to cancel the CountDownTimer
-                isCanceled = true
-
-                //Disable the cancel, pause and resume button
-                btnPause.isEnabled = false
-                btnResume.isEnabled = false
-                btnCancel.isEnabled = false
-                //Enable the start button
-                btnStart.isEnabled = true
-
-                //Notify the user that CountDownTimer is canceled/stopped
-                tView.text = "CountDownTimer Canceled/stopped."
-            }
         }
 
         //Set a Click Listener for cancel/stop button
